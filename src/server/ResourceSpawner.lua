@@ -29,6 +29,7 @@ local function spawnResource(data)
 	local model = modelTemplate:Clone()
 	model:SetAttribute("ResourceId", data.id)
 	model:SetAttribute("Durability", data.durability)
+    model:SetAttribute("RequiredToolPower", data.requiredToolPower)
 
     local size = model:GetExtentsSize()
     local selfRad = math.max(size.X, size.Z) / 2
@@ -77,7 +78,6 @@ function ResourceSpawner.RespawnAll()
 	end
 end
 
--- auto-run on server start
-ResourceSpawner.RespawnAll()
+ResourceSpawner.SpawnResource = spawnResource
 
 return ResourceSpawner

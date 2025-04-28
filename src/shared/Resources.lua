@@ -6,7 +6,7 @@ local Resources = {
 		requiredToolPower = 1,
 		drops = { {itemId = "wood", amount = 3} },
 		durability = 3,
-		weight = 0.6,
+		weight = 0.5,
 		respawnTime = 30,             -- seconds
 	},
 	stone = {
@@ -15,7 +15,7 @@ local Resources = {
 		requiredToolPower = 2,
 		drops = { {itemId = "stone", amount = 3} },
 		durability = 4,
-		weight = 0.25,
+		weight = 0.16,
 		respawnTime = 45,
 	},
     pebble = {
@@ -24,7 +24,7 @@ local Resources = {
 		requiredToolPower = 0,
 		drops = { {itemId = "stone", amount = 1} },
 		durability = 1,
-		weight = 0.15,
+		weight = 0.34,
 		respawnTime = 45,
 	},
 }

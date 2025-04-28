@@ -7,7 +7,7 @@ export type Item = {
 	toolPower: number?,
 }
 
-local Items: {[string]: Item} = {
+local Items = {
 	basic_axe = {
         id = "basic_axe",
         name = "Basic Axe",

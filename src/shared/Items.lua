@@ -18,13 +18,14 @@ local Items = {
 	wood = {
         id = "wood",
         name = "Wood",
-        icon = "rbxassetid://0",
-        maxStack = 99
+        icon = "rbxassetid://90866279893538",
+        maxStack = 99,
+        toolPower = 0
     },
     stone = {
         id = "stone",
         name = "Stone",
-        icon = "rbxassetid://0",
+        icon = "rbxassetid://97210443305959",
         maxStack = 99,
         toolPower = 1
     },

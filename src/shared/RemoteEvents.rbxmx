@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX640E60EF2AAA47C9B89ABCC49D717608">
+	<Item class="Folder" referent="RBX6FF32F56063F40E68FB7E52FB2ECDC56">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -11,7 +11,7 @@
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="RemoteEvent" referent="RBXE7BFABDE02E34826B7147FD764CEFDA9">
+		<Item class="RemoteEvent" referent="RBXBE2B846339EC4C62B2525826E7B204AF">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -21,7 +21,7 @@
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="RemoteEvent" referent="RBX95C06B7CF1694B178F94B4C17788013F">
+		<Item class="RemoteEvent" referent="RBX8934353174194B4DAEBBCE3D8D7BDB60">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -31,7 +31,7 @@
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="RemoteEvent" referent="RBXF9A3FA09AD2B4786A52DED98C22B2AF5">
+		<Item class="RemoteEvent" referent="RBX5029D51CABE54D84B601469262391F7B">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>

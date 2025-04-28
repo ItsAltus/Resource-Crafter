@@ -21,12 +21,19 @@ local Items = {
         icon = "rbxassetid://0",
         maxStack = 99
     },
+    stone = {
+        id = "stone",
+        name = "Stone",
+        icon = "rbxassetid://0",
+        maxStack = 99,
+        toolPower = 1
+    },
 	stone_pickaxe = {
-        id="stone_pickaxe",
-        name="Stone Pickaxe",
-        icon="rbxassetid://0",
-        maxStack=1,
-        toolPower=2
+        id = "stone_pickaxe",
+        name = "Stone Pickaxe",
+        icon = "rbxassetid://0",
+        maxStack = 1,
+        toolPower = 2
     },
 }
 

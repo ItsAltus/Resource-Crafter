@@ -23,6 +23,10 @@ mouse.Button1Down:Connect(function()
     if ray and ray.Instance and ray.Instance:FindFirstAncestorOfClass("Model") then
         local node = ray.Instance:FindFirstAncestorOfClass("Model")
         if node:GetAttribute("ResourceId") then
+            if node:GetAttribute("ResourceId") then
+                print("Client → RequestGather for", node:GetAttribute("ResourceId"))
+                RequestGather:FireServer(node)
+            end
             RequestGather:FireServer(node)
         end
     end

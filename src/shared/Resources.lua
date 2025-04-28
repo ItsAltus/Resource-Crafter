@@ -5,13 +5,13 @@ local Resources = {
 		model = "TreeModel",          -- child of ReplicatedStorage.ResourceModels
 		requiredToolPower = 1,
 		drops = { {itemId = "wood", amount = 3} },
-		durability = 3,
+		durability = 20,
 		weight = 0.5,
 		respawnTime = 30,             -- seconds
 	},
-	stone = {
-		id = "stone",
-		model = "StoneModel",
+	rock = {
+		id = "rock",
+		model = "RockModel",
 		requiredToolPower = 2,
 		drops = { {itemId = "stone", amount = 3} },
 		durability = 4,

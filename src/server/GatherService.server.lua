@@ -16,7 +16,11 @@ local function onGather(player, node)
     local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
     if not hrp then return end
     local nodePosition = node:GetPivot().Position
-    if(hrp.Position - nodePosition).Magnitude > GATHER_RANGE then return end
+    local dx = hrp.Position.X - nodePosition.X
+    local dz = hrp.Position.Z - nodePosition.Z
+    if math.sqrt(dx*dx + dz*dz) > GATHER_RANGE then
+        return
+    end
 
     local id = node:GetAttribute("ResourceId")
     local data = Resources[id]
@@ -35,10 +39,9 @@ local function onGather(player, node)
 
     if durability <= 0 then
         -- award drops (stub: print; swap for InventoryService later)
+        local InventoryService = require(script.Parent:WaitForChild("InventoryService"))
         for _, drop in ipairs(data.drops) do
-            print((
-              "[Gather] %s -> +%d %s"
-            ):format(player.Name, drop.amount, drop.itemId))
+            InventoryService.AddItem(player, drop.itemId, drop.amount)
         end
 
         -- remove node and respawn just this one

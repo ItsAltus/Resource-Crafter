@@ -1,4 +1,3 @@
---!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RCS = ReplicatedStorage:WaitForChild("ResourceCrafterShared")
 local RemoteEvents = RCS:WaitForChild("RemoteEvents")

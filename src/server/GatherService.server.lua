@@ -1,4 +1,3 @@
---!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ResourceSpawner = require(script.Parent:WaitForChild("ResourceSpawner"))
 local Resources = require(ReplicatedStorage.ResourceCrafterShared.Resources)
@@ -26,25 +25,22 @@ local function onGather(player, node)
     local data = Resources[id]
     if not data then return end
 
+    local tool = player.Character:FindFirstChildOfClass("Tool")
+    local toolPower = tool and tool:GetAttribute("ToolPower") or 0
     if data.requiredToolPower > 0 then
-        local tool = player.Character:FindFirstChildOfClass("Tool")
-        local toolPower = tool and tool:GetAttribute("ToolPower") or 0
         if toolPower < data.requiredToolPower then return end
     end
 
-    -- decrement durability
     local durability = node:GetAttribute("Durability") or 0
-    durability -= 1
+    durability -= toolPower
     node:SetAttribute("Durability", durability)
 
     if durability <= 0 then
-        -- award drops (stub: print; swap for InventoryService later)
         local InventoryService = require(script.Parent:WaitForChild("InventoryService"))
         for _, drop in ipairs(data.drops) do
             InventoryService.AddItem(player, drop.itemId, drop.amount)
         end
 
-        -- remove node and respawn just this one
         node:Destroy()
         task.delay(data.respawnTime, function()
             ResourceSpawner.SpawnResource(data)

@@ -1,4 +1,3 @@
---!strict
 export type Item = {
 	id: string,
 	name: string,
@@ -8,12 +7,12 @@ export type Item = {
 }
 
 local Items = {
-	basic_axe = {
-        id = "basic_axe",
-        name = "Basic Axe",
-        icon = "rbxassetid://0",
+	wooden_axe = {
+        id = "wooden_axe",
+        name = "Wooden Axe",
+        icon = "rbxassetid://106664449675720",
         maxStack = 1,
-        toolPower = 1
+        toolPower = 5
     },
 	wood = {
         id = "wood",

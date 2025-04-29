@@ -1,4 +1,3 @@
---!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local CollectionService = game:GetService("CollectionService")
 
@@ -34,14 +33,12 @@ local function spawnResource(data)
     local size = model:GetExtentsSize()
     local selfRad = math.max(size.X, size.Z) / 2
 
-    -- randomized radius
     local pos
     repeat
         local angle = random:NextNumber() * math.pi * 2
 	    local dist = random:NextNumber(R_MIN, R_MAX)
 	    local x, z = math.cos(angle) * dist, math.sin(angle) * dist
 
-        -- raycast down to find ground
 	    local ray = workspace:Raycast(Vector3.new(x, 100, z), Vector3.new(0, -200, 0))
         if ray then
             pos = Vector3.new(x, ray.Position.Y + size.Y/2, z)
@@ -68,12 +65,11 @@ local function spawnResource(data)
 	CollectionService:AddTag(model, "ResourceNode")
 end
 
--- === public API (for /respawnResources chat command later) =========
 local ResourceSpawner = {}
 
 function ResourceSpawner.RespawnAll()
 	SPAWN_FOLDER:ClearAllChildren()
-	for i = 1, 350 do
+	for _ = 1, 350 do
 		spawnResource(weightedChoose())
 	end
 end

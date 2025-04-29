@@ -12,6 +12,34 @@ local RequestGather = ReplicatedStorage
 local player = Players.LocalPlayer
 local mouse = player:GetMouse()
 
+local swingAnim = Instance.new("Animation")
+swingAnim.Name = "GatherSwing"
+swingAnim.AnimationId = "rbxassetid://132929764470013"
+
+local function getAnimator(humanoid)
+    local a = humanoid:FindFirstChildOfClass("Animator")
+    if not a then
+        a = Instance.new("Animator")
+        a.Parent = humanoid
+    end
+    return a
+end
+
+player.CharacterAdded:Connect(function(char)
+    local humanoid = char:WaitForChild("Humanoid")
+    local animator = getAnimator(humanoid)
+
+    char.ChildAdded:Connect(function(child)
+        if child:IsA("Tool") then
+            child.Activated:Connect(function()
+                local track = animator:LoadAnimation(swingAnim)
+                track.Priority = Enum.AnimationPriority.Action
+                track:Play()
+            end)
+        end
+    end)
+end)
+
 mouse.Button1Down:Connect(function()
     local unitRay = workspace.CurrentCamera:ScreenPointToRay(mouse.X, mouse.Y)
     local params = RaycastParams.new()
@@ -22,10 +50,6 @@ mouse.Button1Down:Connect(function()
     if ray and ray.Instance and ray.Instance:FindFirstAncestorOfClass("Model") then
         local node = ray.Instance:FindFirstAncestorOfClass("Model")
         if node:GetAttribute("ResourceId") then
-            if node:GetAttribute("ResourceId") then
-                print("Client → RequestGather for", node:GetAttribute("ResourceId"))
-                RequestGather:FireServer(node)
-            end
             RequestGather:FireServer(node)
         end
     end

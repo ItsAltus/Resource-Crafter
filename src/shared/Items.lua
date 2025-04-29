@@ -1,11 +1,3 @@
-export type Item = {
-	id: string,
-	name: string,
-	icon: string,
-	maxStack: number,
-	toolPower: number?,
-}
-
 local Items = {
 	wooden_axe = {
         id = "wooden_axe",
@@ -31,9 +23,9 @@ local Items = {
 	stone_pickaxe = {
         id = "stone_pickaxe",
         name = "Stone Pickaxe",
-        icon = "rbxassetid://0",
+        icon = "rbxassetid://125416476621162",
         maxStack = 1,
-        toolPower = 2
+        toolPower = 15
     },
 }
 

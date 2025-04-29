@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBXDFEC0FFA3D9644A4B9AF1AB5904BC285">
+	<Item class="Folder" referent="RBX73007EB1605047E69EA1A1A929C1328F">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -11,7 +11,7 @@
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Model" referent="RBXEC17ACB7404544668DEA43B890BA6EB6">
+		<Item class="Model" referent="RBX553BEC18FCD440389FCB94F1709B7764">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -61,7 +61,7 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBX52C2245D76E24AD88EAF0C11A30CDA23">
+			<Item class="Part" referent="RBX683BE809BCE9488E89AC62FF08B7ADC8">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -160,7 +160,7 @@
 					</Vector3>
 				</Properties>
 			</Item>
-			<Item class="Part" referent="RBXA28330DCC15245C292EFC48B4C19B8A0">
+			<Item class="Part" referent="RBX5F1354EB001743A5A34198226F97C08B">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -260,7 +260,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Model" referent="RBX85418073225A4252BAE4544A428D1EFE">
+		<Item class="Model" referent="RBX2B37A6C4587A4CAF90DC14D6DC57857A">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -310,7 +310,7 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBXD1A3A1A266DB4C69AC1DD075452BB195">
+			<Item class="Part" referent="RBXD8C664C7D79945CC8D45537EFA751A71">
 				<Properties>
 					<bool name="Anchored">false</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -410,7 +410,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Model" referent="RBX7E540272FDD447C399EA396664B84FC4">
+		<Item class="Model" referent="RBX62E55FDF70BF46DBADD047265BD2571F">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -460,7 +460,7 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBX58101F9160824CB4A7A3F99B79F397A2">
+			<Item class="Part" referent="RBX37F9391B102A4E838F635DA21FD630BE">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -559,7 +559,7 @@
 					</Vector3>
 				</Properties>
 			</Item>
-			<Item class="Part" referent="RBX44328928B07C4A79B0FA43939CB6F472">
+			<Item class="Part" referent="RBXA69AD45EF5014FDAB4A5DD957780B94F">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -658,7 +658,7 @@
 					</Vector3>
 				</Properties>
 			</Item>
-			<Item class="Part" referent="RBX4620CB21CE0D4F6FAC1A11AA935B6296">
+			<Item class="Part" referent="RBX2B95C5E387DA4519A9F0322B00C9B593">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>

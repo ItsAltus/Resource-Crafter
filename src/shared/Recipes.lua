@@ -1,8 +1,4 @@
-local Recipes: {
-    outputId: string,
-    shape: { string? },
-    ingredients: { [string]: number },
-} = {
+local Recipes = {
     {
         outputId = "wooden_axe",
         shape = {

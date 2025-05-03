@@ -1,3 +1,11 @@
+-- ============================================================
+-- Script Name: Items.lua
+-- Project: Resource Crafter
+-- Author: ItsAltus (GitHub) / DrChicken2424 (Roblox)
+-- Description: Table containing all acquirable items that
+--				in the game.
+-- ============================================================
+
 local Items = {
 	wooden_axe = {
         id = "wooden_axe",

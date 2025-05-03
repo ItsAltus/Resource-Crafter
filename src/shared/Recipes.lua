@@ -1,3 +1,11 @@
+-- ============================================================
+-- Script Name: Recipes.lua
+-- Project: Resource Crafter
+-- Author: ItsAltus (GitHub) / DrChicken2424 (Roblox)
+-- Description: Table containing all craftable recipes that
+--				players can make in the game.
+-- ============================================================
+
 local Recipes = {
     {
         outputId = "wooden_axe",
@@ -9,7 +17,7 @@ local Recipes = {
         ingredients = { wood = 4, stone = 1 },
     },
     {
-        outputId = "wooden_axe",
+        outputId = "wooden_axe",  -- alternative axe shape, crafts same tool
         shape = {
             "wood","wood",  nil,
             "wood","wood",  nil,

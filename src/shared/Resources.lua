@@ -1,3 +1,11 @@
+-- ============================================================
+-- Script Name: Resources.lua
+-- Project: Resource Crafter
+-- Author: ItsAltus (GitHub) / DrChicken2424 (Roblox)
+-- Description: Table containing all resources that
+--				spawn in the game.
+-- ============================================================
+
 local Resources = {
 	tree = {
 		id = "tree",
